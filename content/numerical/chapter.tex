@@ -1,43 +1,43 @@
 \chapter{Numerical}
 
 \section{Polynomials and recurrences}
-  \kactlimport{Polynomial.h}
-  \kactlimport{PolyRoots.h}
-  \kactlimport{PolyInterpolate.h}
-  \kactlimport{BerlekampMassey.h}
-  \kactlimport{LinearRecurrence.h}
+  \kactlimport{Polynomial.h} % keep
+  \kactlimport{PolyRoots.h} % keep
+  \kactlimport{PolyInterpolate.h} % keep
+  \kactlimport{BerlekampMassey.h} % keep
+  \kactlimport{LinearRecurrence.h} % keep
 
 \section{Optimization}
-  \kactlimport{GoldenSectionSearch.h}
-  \kactlimport{Integrate.h}
-  \kactlimport{IntegrateAdaptive.h}
-  \kactlimport{Simplex.h}
-  \kactlimport{HillClimbing.h}
+  \kactlimport{GoldenSectionSearch.h} % keep
+  \kactlimport{Integrate.h} % keep, unlikely to use
+  \kactlimport{IntegrateAdaptive.h} % keep, unlikely to use
+  \kactlimport{Simplex.h} % keep
+%  \kactlimport{HillClimbing.h} % doesnt seem useful (as template)
 
 \section{Matrices}
-  \kactlimport{Determinant.h}
-  \kactlimport{IntDeterminant.h}
-  \kactlimport{SolveLinear.h}
-  \kactlimport{SolveLinear2.h}
-  \kactlimport{SolveLinearBinary.h}
-  \kactlimport{MatrixInverse.h}
-  \kactlimport{MatrixInverse-mod.h}
-  \kactlimport{Tridiagonal.h}
+  \kactlimport{Determinant.h} % keep
+  \kactlimport{IntDeterminant.h} % keep
+  \kactlimport{SolveLinear.h} % keep but idk how to retrieve basis and I havent tested with modulo
+  \kactlimport{SolveLinear2.h} % keep ig, not super useful tho
+  \kactlimport{SolveLinearBinary.h} % can maybe remove
+  \kactlimport{MatrixInverse.h} % keep
+%  \kactlimport{MatrixInverse-mod.h} % almost twice as fast as using matrixinverse w/ modint
+%  \kactlimport{Tridiagonal.h} % idt we need this
 
 \section{Fourier transforms}
-	\kactlimport{FastFourierTransform.h}
-	\kactlimport{FastFourierTransformMod.h}
-	\kactlimport{NumberTheoreticTransform.h}
-	\kactlimport{FastSubsetTransform.h}
+	\kactlimport{FastFourierTransform.h} % used by fftmod but otherwise idk use
+	\kactlimport{FastFourierTransformMod.h} % keep? can be recreated w/ ntt and crt but this is a bit faster probably
+	\kactlimport{NumberTheoreticTransform.h} % keep
+	\kactlimport{FastSubsetTransform.h} % keep since its very concise
 
-\section{Polynomial}
-	\kactlimport{PolyBase.h}
-	\kactlimport{PolyEvaluate.h}
-	\kactlimport{PolyIntegDeriv.h}
-	\kactlimport{PolyInterpolate2.h}
-	\kactlimport{PolyInverse.h}
-	\kactlimport{PolyLogExp.h}
-	\kactlimport{PolyMod.h}
-	\kactlimport{PolyPow.h}
-	\kactlimport{PolyRoots.h}
-  \kactlimport{BostanMori.h}
+%\section{Polynomial}
+%	\kactlimport{PolyBase.h}
+%	\kactlimport{PolyEvaluate.h}
+%	\kactlimport{PolyIntegDeriv.h}
+%	\kactlimport{PolyInterpolate2.h}
+%	\kactlimport{PolyInverse.h}
+%	\kactlimport{PolyLogExp.h}
+%	\kactlimport{PolyMod.h}
+%	\kactlimport{PolyPow.h}
+%	\kactlimport{PolyRoots.h}
+%  \kactlimport{BostanMori.h}

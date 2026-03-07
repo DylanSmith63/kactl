@@ -33,6 +33,7 @@
 #pragma once
 
 ll modLog(ll a, ll b, ll m) {
+	if (b == 1 || b == 0 && m == 1) return 0;
 	ll n = (ll) sqrt(m) + 1, e = 1, f = 1, j = 1;
 	unordered_map<ll, ll> A;
 	while (j <= n && (e = f = e * a % m) != b % m)
