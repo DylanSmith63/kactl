@@ -1,11 +1,11 @@
 \chapter{Graph}
 
 \section{Network flow}
-	\kactlimport{PushRelabel.h}
+	\kactlimport{PushRelabel.h} % keep (used by GomoryHu)
 	\kactlimport{MinCut.h} % keep
 	\kactlimport{MinCostMaxFlow.h} % keep
-	\kactlimport{GlobalMinCut.h}
-	\kactlimport{GomoryHu.h}
+	\kactlimport{GlobalMinCut.h} % keep
+	\kactlimport{GomoryHu.h} % keep
 	\kactlimport{FlowWithDemands.h} % keep
 	\kactlimport{Dinic.h} % keep
 	\kactlimport{EdmondsKarp.h}
@@ -29,14 +29,16 @@
 
     Dilworth's Theorem: In a DAG, $|\text{minimum general path cover}| = |\text{maximum antichain}|$
 
+	Hall's Theorem: In a bipartite graph $G = (L, R, E)$, there exists a matching that covers $L$ iff for every subset $S \subseteq L$, $|N(S)| \geq |S|$ where $N(S)$ is the set of neighbors of $S$
+
 \section{Matching}
-	\kactlimport{hopcroftKarp.h}
-	\kactlimport{DFSMatching.h}
-	\kactlimport{MinimumVertexCover.h}
-	\kactlimport{MaximumIndependentSet.h}
-	\kactlimport{WeightedMatching.h}
-	\kactlimport{GeneralMatching.h}
-	\kactlimport{MatroidIntersection.h}
+	\kactlimport{hopcroftKarp.h} % keep
+	\kactlimport{DFSMatching.h} % keep (short)
+	\kactlimport{MinimumVertexCover.h} % keep (probably)
+	\kactlimport{MaximumIndependentSet.h} % keep
+	\kactlimport{WeightedMatching.h} % keep
+	\kactlimport{GeneralMatching.h} % keep
+	\kactlimport{MatroidIntersection.h} % keep
 
 \subsection{Matroid Notes}
     $\text{rank}(A) + \text{rank}(B) \geq \text{rank}(A \cup B) + \text{rank}(A \cap B)$
@@ -68,22 +70,22 @@
     \end{itemize}
 
 \section{DFS algorithms}
-	\kactlimport{SCC.h}
-	\kactlimport{BiconnectedComponents.h}
-	\kactlimport{Articulation.h}
-	\kactlimport{2sat.h}
-	\kactlimport{EulerWalk.h}
+	\kactlimport{SCC.h} % keep
+	\kactlimport{BiconnectedComponents.h} % keep
+	\kactlimport{Articulation.h} % keep
+	% \kactlimport{2sat.h} % remove because we can rewrite from memory
+	\kactlimport{EulerWalk.h} % keep
 
 \section{Coloring}
-	\kactlimport{EdgeColoring.h}
+	\kactlimport{EdgeColoring.h} % keep but note that its for non-bipartite graphs
 
 \section{Heuristics}
-	\kactlimport{MaximalCliques.h}
-	\kactlimport{MaximumClique.h}
+	\kactlimport{MaximalCliques.h} % keep
+	\kactlimport{MaximumClique.h} % keep
 
 \section{Trees}
-	\kactlimport{CompressTree.h}
-	\kactlimport{HLD.h}
+	\kactlimport{CompressTree.h} % keep
+	% \kactlimport{HLD.h} % remove
 	\kactlimport{LinkCutTree.h}
 	\kactlimport{DirectedMST.h}
 	\kactlimport{LCA.h}
