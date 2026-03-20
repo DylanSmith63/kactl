@@ -38,18 +38,20 @@
 	\kactlimport{MaximumIndependentSet.h} % keep
 	\kactlimport{WeightedMatching.h} % keep
 	\kactlimport{GeneralMatching.h} % keep
+
+\section{Matroid}
 	\kactlimport{MatroidIntersection.h} % keep
 
-\subsection{Matroid Notes}
+	\subsection{Matroid Notes}
     $\text{rank}(A) + \text{rank}(B) \geq \text{rank}(A \cup B) + \text{rank}(A \cap B)$
 
     Matroid Intersection steps:
     \begin{itemize}
      \setlength\itemsep{-1em}
      \item Build exchange graph $D_{M_1, M_2}(S)$
-     - Find ``free to include'' sets $Y_1$ and $Y_2$
-     - Find augmenting path $P$ \textbf{without shortcuts (BFS)} from an element in $Y_1$ to an element in $Y_2$
-     - Alternate inclusion into $S$ of all element in $P$
+     \item Find ``free to include'' sets $Y_1$ and $Y_2$
+     \item Find augmenting path $P$ \textbf{without shortcuts (BFS)} from an element in $Y_1$ to an element in $Y_2$
+     \item Alternate inclusion into $S$ of all element in $P$
     \end{itemize}
 
     Exchange Graph construction:
